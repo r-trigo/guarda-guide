@@ -1,0 +1,29 @@
+<!-- <ion-nav [root]="rootPage"></ion-nav> -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+<ion-menu [content]="mycontent">
+  <ion-header>
+    <ion-toolbar>
+      Opções do utilizador
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button menuClose ion-item>
+        Locais marcados para visitar
+      </button>
+      <button menuClose ion-item>
+        O que já visitei
+      </button>
+      <button menuClose ion-item>
+        Iniciar sessão
+      </button>
+      <button menuClose ion-item>
+        Registar
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mycontent [root]="rootPage">
+
+</ion-nav>

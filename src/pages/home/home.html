@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu">  GuardaGuide</ion-icon>
+    </button>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class='bg-img'>
+
+    <div class='titulo'>
+      <h2>GuardaGuide</h2>
+    </div>
+    <div class="subtitulo">
+      <h4>A Guarda está aqui!</h4>
+    </div>
+
+    <button ion-button large icon-left (click)="showPlaces(2)">
+      <ion-icon name="camera"></ion-icon>
+      Monumentos
+    </button>
+
+    <button ion-button large icon-left (click)="showPlaces(5)">
+      <ion-icon name="tennisball"></ion-icon>
+      Lazer
+    </button>
+
+    <button ion-button large icon-left (click)="showPlaces(7)">
+      <ion-icon name="restaurant"></ion-icon>
+      Restauração
+    </button>
+
+    <button ion-button large icon-left (click)="showPlaces(6)">
+      <ion-icon name="moon"></ion-icon>
+      Alojamento
+    </button>
+
+    <button ion-button large icon-left (click)="showPlaces(8)">
+      <ion-icon name="cafe"></ion-icon>
+      Bares
+    </button>
+
+</ion-content>

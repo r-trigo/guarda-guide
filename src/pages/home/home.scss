@@ -1,0 +1,30 @@
+page-home {
+  .bg-img {
+      background-image: url('../assets/pics/fundoxp1.jpg');
+      background-repeat: no-repeat;
+      background-size:100% 90%;
+    }
+
+    .titulo {
+      text-align: center;
+      width: 50%;
+      color: #ffffff;
+      margin: auto;
+      margin-top: 40px;
+    }
+
+    .subtitulo{
+      text-align: center;
+      width: 65%;
+      color: #ffffff;
+      margin: auto;
+      margin-bottom: 55px;
+    }
+
+    .tabela-centrada {
+      display: block;
+      margin: auto;
+    }
+
+
+}

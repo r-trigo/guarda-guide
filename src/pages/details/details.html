@@ -1,0 +1,49 @@
+<!--
+  Generated template for the DetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title [innerHTML]="place.title.rendered"></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="place" class="selection">
+    <img [src]="place.better_featured_image.source_url" >
+
+    <h2 [innerHTML]="place.title.rendered"></h2>
+    <div [innerHTML]="place.content.rendered"></div>
+    
+  </div>
+
+  <ion-card>
+
+    <img src={{this.staticMapLink}}>
+    <ion-fab right top>
+      <button ion-fab (click)="visitarMaisTarde()">
+        <ion-icon name="bookmark"></ion-icon>
+      </button>
+    </ion-fab>
+
+    <ion-item>
+      <ion-icon name={{this.icon}} item-start large></ion-icon>
+      <h2 [innerHTML]="place.title.rendered"></h2>
+      <p>{{this.place.distance * 1000}} m</p>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="walk"></ion-icon>
+      {{this.timeto}} min
+      <button ion-button icon-left clear item-end (click)="navigate()">
+        <ion-icon name="navigate"></ion-icon>
+        Ir para
+      </button>
+    </ion-item>
+
+  </ion-card>
+</ion-content>
